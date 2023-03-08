@@ -1,9 +1,9 @@
 #include "BYTETracker.h"
 
 BYTETracker::BYTETracker(int frame_rate, int track_buffer) {
-    track_thresh  = 0;
-    high_thresh   = 0.2;
-    match_thresh  = 0.8;
+    track_thresh  = 0.6;
+    high_thresh   = 0.7;
+    match_thresh  = 0.9;
     frame_id      = 0;
     max_time_lost = int(frame_rate / 30.0 * track_buffer);
 }
